@@ -1,2 +1,2 @@
-export * from "./ItemCard";
-export * from "./ItemList";
+export * from "./ItemCard/item-card";
+export * from "./VariantBlock/variant-block";
