@@ -1,15 +1,16 @@
 import { CustomButtonProps } from "interfaces/CustomButtonProps";
-import styled from "styled-components";
+import { Button } from "./custom-button.style";
+import {FaAngleLeft} from "react-icons/fa";
 
 
 export const CustomButton: React.FC<CustomButtonProps> = ({
   name,
-  type,
+  styleType,
 }: CustomButtonProps) => {
-  return <Button>{name}</Button>
+  
+  return (
+
+    <Button styleType={styleType} >{styleType === "back" && <FaAngleLeft size={20} />}{name}</Button>
+  )
     
   };
-
-const Button = styled.button`
-    background: ${(type) => type === "select" ? "#46AD79" : "none" };
-    `;

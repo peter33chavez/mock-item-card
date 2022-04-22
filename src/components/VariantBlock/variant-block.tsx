@@ -14,7 +14,7 @@ export const VariantBlock: React.FC<ItemDetailsProps> = ({itemDetails}: ItemDeta
           ))}
           {itemDetails.variants.length > 4 && (
               <VariantItem>
-                  <VariantItemTitle>...plus {itemDetails.variants.slice(4).length} more</VariantItemTitle>
+                  <VariantItemTitle>... plus {itemDetails.variants.slice(4).length} more</VariantItemTitle>
               </VariantItem>
           )}
       </Variants>
