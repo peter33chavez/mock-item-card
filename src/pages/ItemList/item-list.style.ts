@@ -6,6 +6,8 @@ export const ListContainer = styled.div`
     flex-wrap: wrap;
     gap: 1rem 1rem;
     justify-content: center;
+    padding: 3rem 0 3rem 0;
+    
 `
 
 export const Loading = styled.div``

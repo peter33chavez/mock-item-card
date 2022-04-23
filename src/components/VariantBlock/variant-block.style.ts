@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const Variants = styled.ul`
-    color: #4E596B;
+    color: #2E2E2E;
     font-size: 14px;
     font-weight: 700;
     list-style: none;
