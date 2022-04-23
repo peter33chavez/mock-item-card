@@ -1,4 +1,5 @@
 export interface CustomButtonProps {
     name: string,
-    styleType: string,
+    styletype: string,
+    itemId?: string,
 }

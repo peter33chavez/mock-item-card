@@ -7,3 +7,5 @@ export const ListContainer = styled.div`
     gap: 1rem 1rem;
     justify-content: center;
 `
+
+export const Loading = styled.div``

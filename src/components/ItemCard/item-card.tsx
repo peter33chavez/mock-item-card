@@ -13,7 +13,7 @@ export const ItemCard: React.FC<ItemDetailsProps> = ({itemDetails}: ItemDetailsP
         </Title>
         <VariantBlock itemDetails={itemDetails}/>
       </Details>
-      <CustomButton name="Select" styleType="select" />
+      <CustomButton name="Select" styletype="select" itemId={itemDetails.id}/>
     </Card>
   );
 };
