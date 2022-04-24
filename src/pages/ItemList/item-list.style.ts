@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ListContainer = styled.div`
     align-items: center;
+    background: #F0F6FF;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem 1rem;

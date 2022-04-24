@@ -1,5 +1,3 @@
-
-
 export const PageNotFound: React.FC = () => {
   return (
     <div style={{display: "flex", justifyContent: "center", paddingTop: "20rem"}}>

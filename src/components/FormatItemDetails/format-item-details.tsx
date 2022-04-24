@@ -2,8 +2,6 @@ import { VariantCard } from "components";
 import { ItemDetailsProps } from "interfaces/ItemDetailsProps";
 import { Description, Details, ImageContainer, ItemDetailsContainer, Variants } from "./format-item-details.style"
 
-
-
 export const FormatItemDetails: React.FC<ItemDetailsProps> = ({itemDetails}: ItemDetailsProps) => {
     const {imageUrls, variants, name, description } = itemDetails;
   return (

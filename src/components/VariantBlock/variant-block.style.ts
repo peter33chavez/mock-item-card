@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Variants = styled.ul`
     color: #2E2E2E;
     font-size: 14px;

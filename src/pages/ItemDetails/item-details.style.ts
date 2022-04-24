@@ -6,6 +6,7 @@ export const Loading = styled.div`
     padding-top: 40rem;
 `;
 export const ItemContainer = styled.div`
+    background: #F0F6FF;
     font-family: var(--primary-font);
 `;
 export const Header = styled.div`

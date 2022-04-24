@@ -11,7 +11,7 @@ export const ItemDetailsContainer = styled.div`
 `;
 export const ImageContainer = styled.div`
      min-width: 350px;
-     width: 50vw;
+     width: 45vw;
     img{
         width: 100%;
     }
@@ -29,6 +29,7 @@ export const Details = styled.div`
 export const Description = styled.div`
     h1{
         margin-bottom: 1rem;
+        text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     }
 `;
 export const Variants = styled.div`
