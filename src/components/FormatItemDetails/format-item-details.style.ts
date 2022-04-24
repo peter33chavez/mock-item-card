@@ -2,28 +2,28 @@ import styled from "styled-components";
 
 export const ItemDetailsContainer = styled.div`
     display: flex;
-    padding: 3rem;
     gap: 0 3rem;
+    padding: 3rem;
     @media (max-width: 1170px) {
-        flex-direction: column;
         align-items: center;
+        flex-direction: column;
     }
 `;
 export const ImageContainer = styled.div`
-     width: 50vw;
      min-width: 350px;
+     width: 50vw;
     img{
         width: 100%;
     }
-    `;
+`;
 export const Details = styled.div`
-    max-width: 55vw;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    max-width: 55vw;
     @media (max-width: 1170px) {
-        max-width: 90vw;
         margin-top: 2rem;   
+        max-width: 90vw;
     }
 `;
 export const Description = styled.div`

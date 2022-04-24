@@ -1,5 +1,11 @@
-import { VariantCardProps } from "interfaces/VariantCardProps"
+import { Variant } from "interfaces/Variant"
 import { Card, Details, Price } from "./variant-card.style"
+
+
+interface VariantCardProps {
+  variantDetails: Variant,
+  
+}
 
 export const VariantCard : React.FC<VariantCardProps> = ({variantDetails}: VariantCardProps) => {
   return (

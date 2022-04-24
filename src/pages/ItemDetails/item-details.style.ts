@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const Loading = styled.div``;
+export const Loading = styled.div`
+    align-items: center;
+    display: flex;
+    padding-top: 40rem;
+`;
 export const ItemContainer = styled.div`
     font-family: var(--primary-font);
 `;

@@ -1,7 +1,11 @@
-import { CustomButtonProps } from "interfaces/CustomButtonProps";
 import { Button } from "./custom-button.style";
 import {FaAngleLeft} from "react-icons/fa";
 
+interface CustomButtonProps {
+  name: string,
+  styletype: string,
+  itemId?: string,
+}
 
 export const CustomButton: React.FC<CustomButtonProps> = ({
   name,

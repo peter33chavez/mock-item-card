@@ -1,10 +1,8 @@
 import { VariantItem, VariantItemTitle, Variants } from "./variant-block.style"
 import { ItemDetailsProps } from "interfaces/ItemDetailsProps"
-import { ItemDetails } from "pages"
 
 
 export const VariantBlock: React.FC<ItemDetailsProps> = ({itemDetails}: ItemDetailsProps) => {
-
   return (
     <Variants>
           {itemDetails.variants.slice(0,4).map((variant: any, idx: number ) => (

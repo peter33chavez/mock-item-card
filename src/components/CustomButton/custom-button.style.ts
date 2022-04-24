@@ -20,6 +20,4 @@ export const Button = styled(Link)<Props>`
     text-align: center;
     text-decoration: none;
     text-transform: ${(Props) => Props.styletype === "select" && "uppercase"};
-    
-
 `
