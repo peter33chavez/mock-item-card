@@ -18,12 +18,10 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
     <>
       {styletype !== "back" ? (
         <Button to={`/item/${itemId}`} styletype={styletype}>
-          {" "}
           {name}
         </Button>
       ) : (
         <Button to={"/"} styletype={styletype}>
-          {" "}
           <FaAngleLeft size={20} /> {name}
         </Button>
       )}

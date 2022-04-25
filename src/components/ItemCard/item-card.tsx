@@ -4,7 +4,7 @@ import { ItemDetailsProps } from "interfaces/ItemDetailsProps";
 import {
   Card,
   CardContainer,
-  CardImage,
+  CardBackgroundImage,
   Details,
   OuterTitle,
   Title,
@@ -15,7 +15,7 @@ export const ItemCard: React.FC<ItemDetailsProps> = ({
 }: ItemDetailsProps) => {
   return (
     <CardContainer>
-      <CardImage image={itemDetails.imageUrls[0].url}>
+      <CardBackgroundImage image={itemDetails.imageUrls[0].url}>
         <Card>
           <Details>
             <Title>
@@ -29,7 +29,7 @@ export const ItemCard: React.FC<ItemDetailsProps> = ({
             itemId={itemDetails.id}
           />
         </Card>
-      </CardImage>
+      </CardBackgroundImage>
       <OuterTitle>
         <h1>{itemDetails.name}</h1>
       </OuterTitle>

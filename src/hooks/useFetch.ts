@@ -1,6 +1,10 @@
 import axios from "axios";
 import {useState, useEffect} from "react"
 
+
+// fetching all list items or single item. 
+
+
 export const useFetch = (fetchUrl: string ) => {
     const [fetchData, setFetchData] = useState<any>({data: null, loading: false});
     useEffect(() => {
