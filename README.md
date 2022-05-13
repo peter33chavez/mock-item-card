@@ -10,6 +10,10 @@ I've create two pages: One page that shows a list of "Items", and a details page
 - JavaScript
 - Styled-Components
 - React-Icons
+- react-router-dom
+- lodash
+- axios
+- json-server
 
 ##Demo
 
