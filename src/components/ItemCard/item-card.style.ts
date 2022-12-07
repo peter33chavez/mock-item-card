@@ -6,6 +6,10 @@ type ImageProps = {
 
 export const CardContainer = styled.div`
   font-family: var(--primary-font);
+  transition: 0.3s ease-out;
+  :hover {
+    scale: 1.02;
+  }
 `;
 
 export const CardBackgroundImage = styled.div<ImageProps>`

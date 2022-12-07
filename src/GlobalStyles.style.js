@@ -7,7 +7,11 @@ const GlobalStyle = createGlobalStyle`
     }
     :root{
         --primary-color: #46AD79;
-        --primary-font: 'Montserrat', sans-serif;;
+        --primary-font: 'Montserrat', sans-serif;
+        --nav-background-color: #dbe7f9;
+    }
+    body{
+        background: #f2f6fc;
     }
 `;
 

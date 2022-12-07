@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ItemDetailsContainer = styled.div`
   display: flex;
   gap: 0 3rem;
-  padding: 3rem;
+  padding: 0 3rem 3rem 3rem;
   @media (max-width: 1170px) {
     align-items: center;
     flex-direction: column;

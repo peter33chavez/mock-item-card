@@ -16,7 +16,7 @@ export const Button = styled(Link)<Props>`
   font-weight: 400;
   gap: 5px;
   letter-spacing: 1px;
-  margin-left: ${(Props) => Props.styletype === "back" && "2rem"};
+  margin-left: ${(Props) => Props.styletype === "back" && "2.5rem"};
   padding: 1rem 0 1rem 0;
   text-align: center;
   text-decoration: none;

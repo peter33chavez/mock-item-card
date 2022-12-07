@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Loading = styled.div`
+  width: 100vw;
+  height: 100vh;
   align-items: center;
+  justify-content: center;
   display: flex;
   padding-top: 40rem;
 `;
 export const ItemContainer = styled.div`
-  background: #f0f6ff;
   font-family: var(--primary-font);
   min-height: 100vh;
   max-width: 2000px;
