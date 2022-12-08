@@ -18,7 +18,11 @@ export const ItemDetails: React.FC = () => {
       ) : (
         data && (
           <ItemContainer>
-            <CustomButton styletype="back" name="Back to Marketplace" />
+            <CustomButton
+              styletype="back"
+              name="Back to Marketplace"
+              type="link"
+            />
 
             <FormatItemDetails itemDetails={data} />
           </ItemContainer>

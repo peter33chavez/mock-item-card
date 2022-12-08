@@ -27,6 +27,7 @@ export const ItemCard: React.FC<ItemDetailsProps> = ({
             name="Select"
             styletype="select"
             itemId={itemDetails.id}
+            type="link"
           />
         </Card>
       </CardBackgroundImage>

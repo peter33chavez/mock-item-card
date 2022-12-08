@@ -2,8 +2,11 @@ import React from "react";
 import { CartButton, Header, ItemCount, LogoContainer } from "./layout.style";
 import { BsCart } from "react-icons/bs";
 import companyLogo from "../../assets/companyLogo.svg";
+import { selectCartItems, selectCartTotal } from "features/cartSlice";
+import { useSelector } from "react-redux";
 
 export const Layout = ({ children }: any) => {
+  const cartItems = useSelector(selectCartItems);
   return (
     <>
       <Header>
@@ -13,7 +16,7 @@ export const Layout = ({ children }: any) => {
 
         <CartButton>
           <BsCart size={24} />
-          <ItemCount>0</ItemCount>
+          <ItemCount>{cartItems.length}</ItemCount>
         </CartButton>
       </Header>
       {children}
