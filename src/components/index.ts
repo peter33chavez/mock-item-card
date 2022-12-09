@@ -9,3 +9,5 @@ export * from "./CartItemCard/cart-item-card";
 export * from "./ItemQuantity/item-quantity";
 export * from "./QuantityBtn/quantity-btn";
 export * from "./CartTotal/cart-total";
+export * from "./SearchBar/search-bar";
+export * from "./SearchResultsCard/search-results-card";

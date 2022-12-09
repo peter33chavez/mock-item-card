@@ -1,7 +1,6 @@
 import { QuantityBtn } from "components/QuantityBtn/quantity-btn";
 import { addToCart, removeFromCart } from "features/cartSlice";
 import { Variant } from "interfaces/Variant";
-import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { QuantityContainer } from "./item-quantity.style";
 

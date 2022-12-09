@@ -1,6 +1,5 @@
 import { CustomButton } from "components";
 import { selectCartTotal } from "features/cartSlice";
-import React from "react";
 import { useSelector } from "react-redux";
 import { ButtonContainer, CartTotalContainer } from "./cart-total.style";
 

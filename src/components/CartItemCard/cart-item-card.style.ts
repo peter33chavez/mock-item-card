@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const ListItem = styled.li`
-  list-style-type: none;
-  font-family: var(--primary-font);
   border-radius: 0.8rem;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
+  font-family: var(--primary-font);
   gap: 1rem;
   justify-content: space-between;
+  list-style-type: none;
   padding: 1rem;
 
   div {

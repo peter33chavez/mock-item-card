@@ -1,6 +1,5 @@
 import { ItemQuantity } from "components";
 import { Variant } from "interfaces/Variant";
-import React from "react";
 import { ListItem } from "./cart-item-card.style";
 
 export interface CartItemCardProps {

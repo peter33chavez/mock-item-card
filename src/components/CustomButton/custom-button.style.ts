@@ -28,13 +28,12 @@ export const StyledLink = styled(Link)<Props>`
   }
 `;
 export const StyledButton = styled.button<Props>`
-  width: ${({ fullwidth }) => fullwidth && "100%"};
-  cursor: pointer;
   align-items: center;
   background: var(--primary-color);
   border-radius: 5px;
   border: none;
   color: white;
+  cursor: pointer;
   font-size: 12px;
   font-weight: 400;
   gap: 5px;
@@ -43,6 +42,7 @@ export const StyledButton = styled.button<Props>`
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  width: ${({ fullwidth }) => fullwidth && "100%"};
   :hover {
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
     scale: 1.02;

@@ -1,13 +1,14 @@
-import { Header, ItemContainer, Loading } from "./item-details.style";
+import { ItemContainer, Loading } from "./item-details.style";
 import { useParams } from "react-router-dom";
 import { CustomButton, FormatItemDetails } from "components";
 import { useFetch } from "hooks/useFetch";
 
 export const ItemDetails: React.FC = () => {
   const { id } = useParams();
-  const ITEM_BY_ID_URL: string = `http://localhost:3001/items/${id}`;
 
-  const { data, loading } = useFetch(ITEM_BY_ID_URL);
+  const { data, loading } = useFetch(
+    `${process.env.REACT_APP_API_ENDPOINT}/${id}`
+  );
 
   return (
     <>

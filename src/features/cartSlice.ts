@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-// import { ItemInfo } from "interfaces/ItemInfo";
 import { Variant } from "interfaces/Variant";
 
 
@@ -41,9 +40,6 @@ export const cartSlice = createSlice({
 export const { addToCart, removeFromCart } = cartSlice.actions;
 
 export const selectCartItems = (state: any) => state.cart.items;
-
-export const selectCartItemsWithId = (state:any, id:number) =>
-  state.cart.items.filter((item:any) => item.id === id);
 
 export const selectCartTotal = (state:any) =>
   state.cart.items.reduce((total:number, item:any) => (total += item.price), 0);

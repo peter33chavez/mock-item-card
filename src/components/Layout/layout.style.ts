@@ -9,12 +9,25 @@ export const Header = styled.div`
   padding: 0 3rem;
   z-index: 10;
 `;
+export const IconsContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
 export const CartButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
   position: relative;
 `;
+
+export const SearchButton = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+`;
+
 export const LogoContainer = styled(Link)`
   cursor: pointer;
   position: relative;
