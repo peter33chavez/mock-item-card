@@ -13,7 +13,7 @@ export const Layout = ({ children }: any) => {
   return (
     <>
       <Header>
-        <LogoContainer>
+        <LogoContainer to={"/"}>
           <img src={companyLogo} alt="Company Logo" />
         </LogoContainer>
 
@@ -22,7 +22,9 @@ export const Layout = ({ children }: any) => {
             <>
               <BsCart size={24} />
 
-              <ItemCount>{cartItems.length}</ItemCount>
+              {cartItems.length > 0 && (
+                <ItemCount>{cartItems.length}</ItemCount>
+              )}
             </>
           ) : (
             <IoMdClose size={24} />

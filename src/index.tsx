@@ -9,15 +9,15 @@ import { Layout } from "components";
 ReactDOM.render(
   <Provider store={store}>
     <GlobalStyle />
-    <Layout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <Routes>
           <Route path="/" element={<ItemList />} />
           <Route path="/item/:id" element={<ItemDetails />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </BrowserRouter>
   </Provider>,
 
   document.getElementById("root")

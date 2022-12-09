@@ -7,6 +7,7 @@ interface CustomButtonProps {
   itemId?: string;
   type: string;
   onClick?: () => void;
+  fullwidth?: boolean;
 }
 
 //dynamically supports Select button on item-list page as well as the Back button on item-details page
@@ -17,6 +18,7 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
   itemId,
   type,
   onClick,
+  fullwidth,
 }: CustomButtonProps) => {
   return (
     <>
@@ -24,12 +26,15 @@ export const CustomButton: React.FC<CustomButtonProps> = ({
         <StyledLink
           to={styletype !== "back" ? `/item/${itemId}` : "/"}
           styletype={styletype}
+          fullwidth={fullwidth}
         >
           {styletype === "back" && <FaAngleLeft size={20} />}
           {name}
         </StyledLink>
       ) : (
-        <StyledButton onClick={onClick}>{name}</StyledButton>
+        <StyledButton onClick={onClick} fullwidth={fullwidth}>
+          {name}
+        </StyledButton>
       )}
     </>
   );

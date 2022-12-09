@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 
 type Props = {
   styletype?: string;
+  fullwidth?: boolean;
 };
 
 export const StyledLink = styled(Link)<Props>`
+  width: ${({ fullwidth }) => fullwidth && "100%"};
   align-items: center;
   background: ${(Props) =>
     Props.styletype === "select" ? "var(--primary-color)" : "none"};
@@ -25,7 +27,8 @@ export const StyledLink = styled(Link)<Props>`
     text-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
   }
 `;
-export const StyledButton = styled.button`
+export const StyledButton = styled.button<Props>`
+  width: ${({ fullwidth }) => fullwidth && "100%"};
   cursor: pointer;
   align-items: center;
   background: var(--primary-color);

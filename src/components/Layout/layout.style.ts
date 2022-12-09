@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Header = styled.div`
@@ -14,7 +15,7 @@ export const CartButton = styled.button`
   cursor: pointer;
   position: relative;
 `;
-export const LogoContainer = styled.div`
+export const LogoContainer = styled(Link)`
   cursor: pointer;
   position: relative;
   width: 70px;
@@ -25,14 +26,16 @@ export const LogoContainer = styled.div`
 
 export const ItemCount = styled.div`
   position: absolute;
-  top: 28px;
-  right: 4px;
+  top: 20px;
+  right: -5px;
   width: 15px;
   height: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: bold;
+  background: #d61212;
+  color: white;
 `;

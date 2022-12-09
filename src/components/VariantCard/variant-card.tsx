@@ -14,7 +14,6 @@ export const VariantCard: React.FC<VariantCardProps> = ({
   const dispatch = useDispatch();
 
   const addItemToCart = () => {
-    console.log(variantDetails);
     dispatch(addToCart(variantDetails));
   };
 

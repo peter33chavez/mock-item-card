@@ -3,10 +3,8 @@ import { useFetch } from "hooks/useFetch";
 import { ItemInfo } from "interfaces/ItemInfo";
 import { ListContainer, Loading } from "./item-list.style";
 
-const ITEMS_URL: string = "http://localhost:3001/items";
-
 export const ItemList: React.FC = () => {
-  const { data, loading } = useFetch(ITEMS_URL);
+  const { data, loading } = useFetch(`${process.env.REACT_APP_API_ENDPOINT}`);
 
   return (
     <>

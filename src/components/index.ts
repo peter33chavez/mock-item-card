@@ -6,3 +6,6 @@ export * from "./VariantCard/variant-card";
 export * from "./Layout/layout";
 export * from "./OpenCart/open-cart";
 export * from "./CartItemCard/cart-item-card";
+export * from "./ItemQuantity/item-quantity";
+export * from "./QuantityBtn/quantity-btn";
+export * from "./CartTotal/cart-total";
